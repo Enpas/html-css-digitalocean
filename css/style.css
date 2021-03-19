@@ -1,0 +1,73 @@
+/* GLOBAL */
+.debug {
+  background-color: rgba(85, 247, 198, 0.2);
+}
+
+.ep-wrapper-80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ep-pd-50 {
+  padding: 50px 0;
+}
+
+/* HEADER */
+header .ep-header {
+  height: 80px;
+  background-color: #F3F5F9;
+}
+
+/* MAIN */
+
+/* JUMBOTRON */
+main .ep-jumbotron {
+  height: 500px;
+  background-image: url(../img/bg-banner-home.jpg);
+  background-size: 105%;
+}
+
+.ep-jumbotron .ep-box-debug {
+  height: 400px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+/* CUSTOMERS */
+main .ep-customers {
+  height: 270px;
+  background-color: #F3F5F9;
+}
+
+.ep-customers .ep-box-debug {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+/* DEPLOY */
+main .ep-deploy {
+  height: 700px;
+  background-color: rgb(185, 248, 248);
+}
+
+.ep-deploy .ep-box-debug {
+  height: 160px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+/* DESIGN */
+main .ep-design {
+  height: 770px;
+  background-color: #F3F5F9;
+}
+
+.ep-design .ep-box-debug {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
