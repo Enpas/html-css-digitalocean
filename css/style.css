@@ -8,23 +8,39 @@
   margin: 0 auto;
 }
 
+.ep-wrapper-60 {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .ep-pd-50 {
   padding: 50px 0;
 }
 
 /* HEADER */
 header .ep-header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
   height: 80px;
+  width: 100%;
   background-color: #F3F5F9;
+}
+
+.ep-header .ep-box-debug {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 15px;
 }
 
 /* MAIN */
 
 /* JUMBOTRON */
 main .ep-jumbotron {
-  height: 500px;
   background-image: url(../img/bg-banner-home.jpg);
   background-size: 105%;
+  margin-top: 80px;
 }
 
 .ep-jumbotron .ep-box-debug {
@@ -35,7 +51,6 @@ main .ep-jumbotron {
 
 /* CUSTOMERS */
 main .ep-customers {
-  height: 270px;
   background-color: #F3F5F9;
 }
 
@@ -48,8 +63,15 @@ main .ep-customers {
 
 /* DEPLOY */
 main .ep-deploy {
-  height: 700px;
   background-color: rgb(185, 248, 248);
+}
+
+.ep-deploy .ep-box-debug._1 {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .ep-deploy .ep-box-debug {
@@ -61,7 +83,6 @@ main .ep-deploy {
 
 /* DESIGN */
 main .ep-design {
-  height: 770px;
   background-color: #F3F5F9;
 }
 
@@ -70,4 +91,114 @@ main .ep-design {
   width: 100%;
   border: 1px solid black;
   margin-bottom: 10px;
+}
+
+.ep-design .ep-box-debug._2 {
+  height: 500px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+/* FEATURES */
+main .ep-features {
+  background-color: rgb(185, 248, 248);
+}
+
+.ep-features .ep-box-debug._1 {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.ep-features .ep-box-debug {
+  height: 160px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+/* SERVICES */
+main .ep-services {
+  background-image: linear-gradient(#0147C5, #03209A);
+}
+
+.ep-services .ep-box-debug._1 {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.ep-services .ep-box-debug._riga {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.ep-services .ep-box-debug {
+  height: 40px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+/* DEV-TEAMS */
+main .ep-dev-teams {
+  background-color: rgb(185, 248, 248);
+}
+
+.ep-dev-teams .ep-box-debug {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.ep-dev-teams .ep-box-debug._2 {
+  height: 450px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+/* START */
+main .ep-start {
+  background-image: linear-gradient(#0147C5, #03209A);
+}
+
+.ep-start .ep-box-debug {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #041D4E;
+}
+
+.ep-box-debug._credits{
+  height: 180px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.ep-box-debug._col-mother {
+  height: 370px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.ep-box-debug._col {
+  width: 100%;
+  height: 370px;
+  border: 1px solid black;
+  margin-bottom: 20px;
 }
