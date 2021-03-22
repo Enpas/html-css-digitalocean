@@ -1,15 +1,11 @@
 /* GLOBAL */
-.debug {
-  background-color: rgba(85, 247, 198, 0.2);
-}
-
 body {
   font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-  color: #fff;
-  font-size: 53px;
+  color: #FFF;
+  font-size: 52px;
   line-height: 130%;
 }
 
@@ -17,7 +13,12 @@ h2 {
   color: #041D4D;
 }
 
+h4 {
+  color: #FFF;
+}
+
 h5 {
+  font-weight: bold;
   color: #041D4D;
 }
 
@@ -25,14 +26,19 @@ p {
   color: #041D4D;
 }
 
+a {
+  font-weight: bold;
+}
+
 .ep-description {
-  font-size: 24px;
+  font-size: 18px;
   color: #6F7B97;
-  line-height: 130%;
+  line-height: 160%;
 }
 
 .ep-caption {
   font-size: 12px;
+  font-weight: bold;
 }
 
 .ep-wrapper-80 {
@@ -45,16 +51,14 @@ p {
   margin: 0 auto;
 }
 
-.ep-pd-0 {
-  padding: 0;
-}
-
 .ep-pd-50 {
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .ep-pd-25 {
-  padding: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .ep-mt-20 {
@@ -63,9 +67,74 @@ p {
 .ep-mb-20 {
   margin-bottom: 30px;
 }
+.ep-mb-10 {
+  margin-bottom: 10px;
+}
 
-.ep-blue-link {
+.ep-color-blue {
   color: #006AFF;
+}
+
+@media all and (max-width: 991px) {
+  main .ep-customers .ep-customers-logo img {
+    height: 140px;
+    vertical-align: middle;
+  }
+
+  main .ep-wrapper-60 .row .ep-box img {
+    height: 30px;
+    vertical-align: middle;
+  }
+
+  main .ep-design .ep-caption {
+    font-size: 16px;
+  }
+}
+
+/* BUTTONS */
+.ep-menu-right ul li button.ep-btn-sign {
+  border-color: #006AFF;
+}
+
+.ep-menu-right ul li button.ep-btn-sign:hover {
+  opacity: 1;
+}
+
+header .ep-header li a.ep-color-blue {
+  color: #006AFF;
+}
+header .ep-header button.ep-btn-sign:hover a.ep-blue-link {
+  color: #FFF;
+}
+
+main .ep-jumbotron .ep-signup-box .ep-btn-jumbo {
+  width: 100%;
+  padding: 5px;
+  background-color: #006AFF;
+  opacity: 0.7;
+  color: #FFF;
+}
+
+main .ep-jumbotron .ep-signup-box a {
+  color:#006AFF;
+}
+
+main .ep-jumbotron .ep-signup-box .ep-btn-jumbo:hover {
+  opacity: 1;
+}
+
+main .ep-start .btn:hover {
+  opacity: 0.8;
+  color: #006AFF;
+}
+
+main .ep-start .btn:active {
+  color: #FFF;
+  background-color: #006AFF;
+}
+
+main .ep-start .btn {
+  font-weight: bold;
 }
 
 /* HEADER */
@@ -74,26 +143,24 @@ header .ep-header {
   top: 0;
   z-index: 999;
   height: 80px;
-  width: 100%;
   line-height: 80px;
-  background-color: #fff;
+  width: 100%;
+  background-color: #FFF;
   border-bottom: 1px solid rgb(235, 235, 235);
 }
 
 .ep-logo img {
   width: 100%;
+  min-width: 150px;
 }
 
 header .ep-header li a {
   color: #041D4D;
 }
 
-header .ep-header li a.ep-blue-link {
+header .ep-header li a:hover {
+  text-decoration: none;
   color: #006AFF;
-}
-
-.ep-menu-right ul li button.ep-btn-sign {
-  border-color: #006AFF;
 }
 
 header .ep-header .ep-menu-burger {
@@ -113,7 +180,7 @@ header .ep-header .ep-menu-burger .ep-menu-bar {
 /* JUMBOTRON */
 main .ep-jumbotron {
   background-image: url(../img/bg-banner-home.jpg);
-  background-size: 99%;
+  background-size: contain;
   margin-top: 80px;
 }
 
@@ -122,36 +189,24 @@ main .ep-jumbotron .ep-description {
 }
 
 main .ep-jumbotron .ep-signup-box {
-  background-color: #fff;
+  background-color: #FFF;
   border-radius: 5px;
   padding: 15px 10px;
-}
-
-main .ep-jumbotron .ep-signup-box h3:nth-child(2) {
-  margin-top: 10px;
-  color: #006AFF;
 }
 
 main .ep-jumbotron .ep-signup-box input{
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
-  border: 1px solid #eee;
+  border: 1px solid #EEE;
   border-radius: 5px;
 }
 
-main .ep-jumbotron .ep-signup-box .ep-btn-jumbo {
-  width: 100%;
-  padding: 5px;
-  background-color: #006AFF;
-  opacity: 0.7;
-  color: #fff;
-}
 main .ep-jumbotron .ep-signup-box .ep-btn-google {
   width: 100%;
   padding: 5px;
   margin: 5px 0 10px 0;
-  background-color: #fff;
+  background-color: #FFF;
   box-shadow: 1px 1px 1px #CECECE;
 }
 
@@ -166,11 +221,8 @@ main .ep-customers h5 {
   margin-bottom: 25px;
 }
 
-@media all and (max-width: 991px) {
-  main .ep-customers .ep-customers-logo img {
-    height: 140px;
-    vertical-align: middle;
-  }
+main .ep-customers a{
+  color:#006AFF;
 }
 
 /* DEPLOY */
@@ -180,10 +232,12 @@ main .ep-deploy ul li {
 }
 
 main .ep-deploy ul li a {
+  font-weight: 500;
   color: #6F7B97;
 }
 
-main .ep-deploy .ep-wrapper-80 .ep-description {
+main .ep-deploy .ep-wrapper-80 .ep-description,
+main .ep-features .ep-description {
   font-size: 14px;
 }
 
@@ -192,37 +246,22 @@ main .ep-design {
   background-color: #F3F5F9;
 }
 
-main .ep-design .ep-wrapper-60 {
-  line-height: 360px;
+main .ep-design .ep-wrapper-60 .col-xs-1 {
+  padding-top: 25%;
 }
 
-main .ep-design i {
+main .fas {
   font-size: 28px;
 }
 
-main .ep-design img {
-  width: 100%;
-  min-width: 400px;
+main .far:active {
+  background-color: #006AFF;
+  border-radius: 50%;
 }
 
 /* FEATURES */
-main .ep-features {
-  background-color: rgb(185, 248, 248);
-}
-
-.ep-features .ep-box-debug._1 {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
-}
-
-.ep-features .ep-box-debug {
-  height: 160px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
-  margin-top: 30px;
+main .ep-features a {
+  color:#006AFF
 }
 
 /* SERVICES */
@@ -230,45 +269,68 @@ main .ep-services {
   background-image: linear-gradient(#0147C5, #03209A);
 }
 
-.ep-services .ep-box-debug._1 {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
+.row.ep-row {
+  position: relative;
 }
 
-.ep-services .ep-box-debug._riga {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
+.row.ep-row:not(:last-child)::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  height: 1px;
+  width: 95%;
+  background-color: #FFF;
 }
 
-.ep-services .ep-box-debug {
-  height: 40px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
+main .ep-services h2,
+main .ep-start h2,
+main .ep-services h5 {
+  color: #FFF;
+}
+
+main .ep-services p {
+  color: #B8C6E8;
+  font-size: 95%;
+  margin: 10px 0;
+}
+
+main .ep-services a {
+  color: #00D2CC;
 }
 
 /* DEV-TEAMS */
 main .ep-dev-teams {
-  background-color: rgb(185, 248, 248);
+  background-color: #F3F5F9;
 }
 
-.ep-dev-teams .ep-box-debug {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
+main .ep-dev-teams .ep-box {
+  background-color: #FFF;
+  padding: 30px 0;
+  max-width: 450px;
+  margin: 20px auto;
 }
 
-.ep-dev-teams .ep-box-debug._2 {
-  height: 450px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
-  margin-top: 30px;
+main .ep-dev-teams .ep-box h6 {
+  margin-bottom: 3px;
+  font-weight: bold;
+  color: #041D4D;
+}
+
+main .ep-dev-teams .ep-box a {
+  font-size: 12px;
+  color:#006AFF
+}
+
+main .ep-dev-teams .ep-box p.ep-description {
+  font-size: 100%;
+}
+
+main .ep-dev-teams .ep-box p.ep-caption {
+  font-size: 80%;
+}
+
+main .ep-dev-teams .ep-wrapper-60 .col-xs-1 {
+  padding-top: 20%;
 }
 
 /* START */
@@ -276,33 +338,34 @@ main .ep-start {
   background-image: linear-gradient(#0147C5, #03209A);
 }
 
-.ep-start .ep-box-debug {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 20px;
-}
-
 /* FOOTER */
 footer {
   background-color: #041D4E;
 }
 
-.ep-box-debug._credits{
-  height: 180px;
-  border: 1px solid black;
-  margin-bottom: 20px;
+footer img.ep-ft-logo {
+  width: 40px;
 }
 
-.ep-box-debug._col-mother {
-  height: 370px;
-  border: 1px solid black;
-  margin-bottom: 20px;
+footer p.ep-description, footer i {
+  color: #8B94A9;
+  font-size: 14px;
+  margin: 0;
 }
 
-.ep-box-debug._col {
-  width: 100%;
-  height: 370px;
-  border: 1px solid black;
-  margin-bottom: 20px;
+footer p.ep-caption {
+  color: #596784;
+}
+
+footer ul li {
+  margin-top: 10px;
+}
+
+footer ul li a {
+  color: #8B94A9;
+}
+
+footer a:hover, footer a:hover i {
+  text-decoration: none;
+  color:#00D2CC;
 }
