@@ -13,13 +13,21 @@ h1 {
   line-height: 130%;
 }
 
+h2 {
+  color: #041D4D;
+}
+
+h5 {
+  color: #041D4D;
+}
+
 p {
   color: #041D4D;
 }
 
 .ep-description {
   font-size: 24px;
-  color: #BBCDFF;
+  color: #6F7B97;
   line-height: 130%;
 }
 
@@ -37,12 +45,23 @@ p {
   margin: 0 auto;
 }
 
-.ep-pd-50 {
-  padding: 50px 0;
-}
-
 .ep-pd-0 {
   padding: 0;
+}
+
+.ep-pd-50 {
+  padding: 50px;
+}
+
+.ep-pd-25 {
+  padding: 25px;
+}
+
+.ep-mt-20 {
+  margin-top: 20px;
+}
+.ep-mb-20 {
+  margin-bottom: 30px;
 }
 
 .ep-blue-link {
@@ -58,6 +77,7 @@ header .ep-header {
   width: 100%;
   line-height: 80px;
   background-color: #fff;
+  border-bottom: 1px solid rgb(235, 235, 235);
 }
 
 .ep-logo img {
@@ -95,6 +115,10 @@ main .ep-jumbotron {
   background-image: url(../img/bg-banner-home.jpg);
   background-size: 99%;
   margin-top: 80px;
+}
+
+main .ep-jumbotron .ep-description {
+  color: #BBCDFF;
 }
 
 main .ep-jumbotron .ep-signup-box {
@@ -136,31 +160,31 @@ main .ep-customers {
   background-color: #F3F5F9;
 }
 
-.ep-customers .ep-box-debug {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
+main .ep-customers h5 {
+  text-transform: uppercase;
+  color: #6F7B97;
+  margin-bottom: 25px;
+}
+
+@media all and (max-width: 991px) {
+  main .ep-customers .ep-customers-logo img {
+    height: 140px;
+    vertical-align: middle;
+  }
 }
 
 /* DEPLOY */
-main .ep-deploy {
-  background-color: rgb(185, 248, 248);
+main .ep-deploy ul li {
+  padding: 10px 10px;
+  border-left: 2px solid #CECECE
 }
 
-.ep-deploy .ep-box-debug._1 {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
-  margin-bottom: 30px;
+main .ep-deploy ul li a {
+  color: #6F7B97;
 }
 
-.ep-deploy .ep-box-debug {
-  height: 160px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
+main .ep-deploy .ep-wrapper-80 .ep-description {
+  font-size: 14px;
 }
 
 /* DESIGN */
@@ -168,19 +192,17 @@ main .ep-design {
   background-color: #F3F5F9;
 }
 
-.ep-design .ep-box-debug {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
+main .ep-design .ep-wrapper-60 {
+  line-height: 360px;
 }
 
-.ep-design .ep-box-debug._2 {
-  height: 500px;
+main .ep-design i {
+  font-size: 28px;
+}
+
+main .ep-design img {
   width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
-  margin-top: 30px;
+  min-width: 400px;
 }
 
 /* FEATURES */
