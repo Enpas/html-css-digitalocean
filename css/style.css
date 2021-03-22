@@ -3,6 +3,30 @@
   background-color: rgba(85, 247, 198, 0.2);
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 53px;
+  line-height: 130%;
+}
+
+p {
+  color: #041D4D;
+}
+
+.ep-description {
+  font-size: 24px;
+  color: #BBCDFF;
+  line-height: 130%;
+}
+
+.ep-caption {
+  font-size: 12px;
+}
+
 .ep-wrapper-80 {
   width: 80%;
   margin: 0 auto;
@@ -17,6 +41,14 @@
   padding: 50px 0;
 }
 
+.ep-pd-0 {
+  padding: 0;
+}
+
+.ep-blue-link {
+  color: #006AFF;
+}
+
 /* HEADER */
 header .ep-header {
   position: fixed;
@@ -24,14 +56,36 @@ header .ep-header {
   z-index: 999;
   height: 80px;
   width: 100%;
-  background-color: #F3F5F9;
+  line-height: 80px;
+  background-color: #fff;
 }
 
-.ep-header .ep-box-debug {
-  height: 50px;
+.ep-logo img {
   width: 100%;
-  border: 1px solid black;
-  margin-top: 15px;
+}
+
+header .ep-header li a {
+  color: #041D4D;
+}
+
+header .ep-header li a.ep-blue-link {
+  color: #006AFF;
+}
+
+.ep-menu-right ul li button.ep-btn-sign {
+  border-color: #006AFF;
+}
+
+header .ep-header .ep-menu-burger {
+  margin-top: 30px;
+}
+
+header .ep-header .ep-menu-burger .ep-menu-bar {
+  width: 35px; 
+  height: 5px;
+  margin-bottom: 5px;
+  z-index: 1000;
+  background-color: #2485FD;
 }
 
 /* MAIN */
@@ -39,14 +93,42 @@ header .ep-header {
 /* JUMBOTRON */
 main .ep-jumbotron {
   background-image: url(../img/bg-banner-home.jpg);
-  background-size: 105%;
+  background-size: 99%;
   margin-top: 80px;
 }
 
-.ep-jumbotron .ep-box-debug {
-  height: 400px;
+main .ep-jumbotron .ep-signup-box {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px 10px;
+}
+
+main .ep-jumbotron .ep-signup-box h3:nth-child(2) {
+  margin-top: 10px;
+  color: #006AFF;
+}
+
+main .ep-jumbotron .ep-signup-box input{
   width: 100%;
-  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+main .ep-jumbotron .ep-signup-box .ep-btn-jumbo {
+  width: 100%;
+  padding: 5px;
+  background-color: #006AFF;
+  opacity: 0.7;
+  color: #fff;
+}
+main .ep-jumbotron .ep-signup-box .ep-btn-google {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 10px 0;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px #CECECE;
 }
 
 /* CUSTOMERS */
