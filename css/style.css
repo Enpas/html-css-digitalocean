@@ -30,6 +30,11 @@ a {
   font-weight: bold;
 }
 
+.ep-container-shark {
+  margin-right: 40px;
+  margin-bottom: 5px;
+}
+
 .ep-description {
   font-size: 18px;
   color: #6F7B97;
@@ -89,6 +94,15 @@ a {
   main .ep-design .ep-caption {
     font-size: 16px;
   }
+
+  .ep-container-shark {
+    margin-left: 40px;
+  }
+
+  footer .ep-shark .ep-shark-img,
+  footer .ep-shark .ep-shark-text {
+    float: left!important;
+  }
 }
 
 /* BUTTONS */
@@ -97,13 +111,15 @@ a {
 }
 
 .ep-menu-right ul li button.ep-btn-sign:hover {
-  opacity: 1;
+  background-color: #006AFF;
+  border-color: #FFF;
+  color: #FFF;
 }
 
 header .ep-header li a.ep-color-blue {
   color: #006AFF;
 }
-header .ep-header button.ep-btn-sign:hover a.ep-blue-link {
+header .ep-header button.ep-btn-sign:hover a.ep-color-blue {
   color: #FFF;
 }
 
@@ -210,6 +226,11 @@ main .ep-jumbotron .ep-signup-box .ep-btn-google {
   box-shadow: 1px 1px 1px #CECECE;
 }
 
+main .ep-jumbotron .ep-signup-box .ep-btn-google img {
+  height: 20px;
+  display: inline;
+}
+
 /* CUSTOMERS */
 main .ep-customers {
   background-color: #F3F5F9;
@@ -305,6 +326,7 @@ main .ep-dev-teams {
 
 main .ep-dev-teams .ep-box {
   background-color: #FFF;
+  border-radius: 5px;
   padding: 30px 0;
   max-width: 450px;
   margin: 20px auto;
@@ -368,4 +390,66 @@ footer ul li a {
 footer a:hover, footer a:hover i {
   text-decoration: none;
   color:#00D2CC;
+}
+
+footer .ep-shark {
+  position: fixed;
+  z-index: 998;
+  bottom: 20px;
+  width: 100%;
+  background-color: transparent;
+}
+
+footer .ep-shark .ep-shark-img {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #006AFF;
+  background-image: url(../img/shark.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+
+footer .ep-shark .ep-shark-img .ep-shark-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 22px;
+  height: 22px;
+  background-color: #FF0000;
+  border-radius: 50%;
+  border: 3px solid #FFF;
+}
+
+footer .ep-shark .ep-shark-img .ep-shark-badge p {
+  color: #FFF;
+  margin: -2px;
+  padding: 0;
+}
+
+footer .ep-shark .ep-shark-text {
+  position: relative;
+  max-width: 250px;
+  height: 60px;
+  background-color: #FFF;
+  box-shadow: 0 0 3px 1px #c7c7c7;
+  padding: 10px;
+  border-radius: 5px;
+  color: #041D4D;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+footer .ep-shark .ep-shark-text .ep-square {
+  position: absolute;
+  right: -6px;
+  bottom: 9px;
+  width: 14px;
+  height: 14px;
+  background-color: #FFF;
+  box-shadow: 1px -1px 3px 0px #c7c7c7;
+  transform: rotate(45deg);
 }
