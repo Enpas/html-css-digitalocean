@@ -46,6 +46,11 @@ a {
   font-weight: bold;
 }
 
+.ep-color-blue {
+  color: #006AFF;
+}
+
+/* WRAPPER */
 .ep-wrapper-80 {
   width: 80%;
   margin: 0 auto;
@@ -56,6 +61,7 @@ a {
   margin: 0 auto;
 }
 
+/* PADDING */
 .ep-pd-50 {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -66,6 +72,7 @@ a {
   padding-bottom: 25px;
 }
 
+/* MARGIN */
 .ep-mt-20 {
   margin-top: 20px;
 }
@@ -76,8 +83,11 @@ a {
   margin-bottom: 10px;
 }
 
-.ep-color-blue {
-  color: #006AFF;
+/* MEDIA-Q */
+@media all and (max-width: 1199px) {
+  h1 {
+    font-size: 40px;
+  }
 }
 
 @media all and (max-width: 991px) {
@@ -93,6 +103,10 @@ a {
 
   main .ep-design .ep-caption {
     font-size: 16px;
+  }
+
+  main .far {
+    font-size: 80%;
   }
 
   .ep-container-shark {
@@ -275,7 +289,9 @@ main .fas {
   font-size: 28px;
 }
 
-main .far:active {
+main .far:active,
+main .far:hover,
+main .far.ep-active {
   background-color: #006AFF;
   border-radius: 50%;
 }
